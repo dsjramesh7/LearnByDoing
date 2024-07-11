@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from "react";
+import CreateTodo from "./components/CreateTodo";
+import Todos from "./components/Todos";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const [todos, setTodos] = useState([]);
 
-export default App
+  fetch("https://localhost:3000/todos").then(async function (res) {
+    const json = await res.json();
+    setTodos(json.todos);
+  });
+  return (
+    <>
+      <CreateTodo />
+      <Todos todos={todos} />
+    </>
+  );
+};
+
+export default App;
