@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import Todos from "./components/Todos";
 
 const App = () => {
   return (
     <>
       <HeadersWithButton />
       <Headers title={"username is luffymugiwara"} />
+
+      <Todos />
     </>
   );
 };
