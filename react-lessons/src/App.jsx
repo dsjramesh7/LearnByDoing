@@ -6,9 +6,6 @@ const App = () => {
     <>
       <HeadersWithButton />
       <Headers title={"username is luffymugiwara"} />
-      <Headers title={"username is oioioi"} />
-      <Headers title={"username is rey"} />
-      <Headers title={"username is luffymugiwara"} />
     </>
   );
 };
@@ -23,7 +20,7 @@ function HeadersWithButton() {
   };
   return (
     <div>
-      <h1>{`My Roll No is ${title}`}</h1>
+      <h1>{`My roll number is: ${title}`}</h1>
       <button onClick={updateRollNumber}>Click me</button>
     </div>
   );
