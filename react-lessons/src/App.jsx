@@ -1,14 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import Todos from "./components/Todos";
+import TodosThroughId from "./components/TodosThroughId";
+import SumCounter from "./components/SumCounter";
 
 const App = () => {
   return (
     <>
-      <HeadersWithButton />
-      <Headers title={"username is luffymugiwara"} />
+      {/* <HeadersWithButton /> */}
+      {/* <Headers title={"username is luffymugiwara"} /> */}
 
-      <Todos />
+      {/* <Todos /> */}
+      {/* <TodosThroughId /> */}
+      <SumCounter />
     </>
   );
 };
